@@ -1,0 +1,65 @@
+.demo-image-preview {
+    position: relative;
+    margin: 20px 0;
+    text-align: center;
+    color: rgb(8, 8, 8);
+    background-image: linear-gradient(60deg, rgb(140,0,255), rgb(196, 151, 228));
+    background-color: rgb(247, 255, 254);
+    
+  }
+  
+  .demo-image-preview > img {
+    border-style: dashed;
+    width: 640px;
+    height: 360px;
+  }
+  
+  @media(max-width:640px){
+    .demo-image-preview > img {
+      width: 97%;
+      max-height: 100%;
+    }
+  }
+  
+  /* fullscreen enable by props */
+  .demo-image-preview-fullscreen > img {
+    width: 100vw;
+    height:100vh;
+  }
+
+  .cam{
+    margin-top: 50px;
+  }
+
+  .heading{
+    border-style: outset ;
+    color: #000800;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 5px;
+    font: 18px Arial, sans-serif;
+  }
+
+  .videoId {
+    min-width: 200px;
+   
+    background-color: black;
+    margin-top: 100px;
+  }
+  .react-html5-camera-photo{
+      background-color: rgb(27, 25, 25);
+      margin: auto;
+      
+      max-height: 720px;
+  }
+  .react-html5-camera-photo>video{
+    width: 90%;
+    
+    border-color: rgb(233, 238, 164);
+    margin-top: 50px;
+    margin-bottom: 100px;
+    max-height: 520px;
+  }
+  .react-html5-camera-photo-fullscreen > video {
+    object-fit: contain;
+  }
